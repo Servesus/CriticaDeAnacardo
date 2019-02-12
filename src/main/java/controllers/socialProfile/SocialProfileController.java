@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -74,7 +75,7 @@ public class SocialProfileController extends AbstractController {
 
 	}
 	@RequestMapping(value = "handyWorker,customer,admin,referee/edit", method = RequestMethod.POST, params = "save")
-	public ModelAndView save(@Valid final Profile profile, final BindingResult binding) {
+	public ModelAndView save(@ModelAttribute("socialProfile") @Valid final Profile profile, final BindingResult binding) {
 		ModelAndView result;
 		if (binding.hasErrors())
 			result = this.createEditModelAndView(profile);
