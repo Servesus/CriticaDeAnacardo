@@ -148,10 +148,17 @@ public class MessageController extends AbstractController {
 	public ModelAndView show(@RequestParam final int messageId) {
 		ModelAndView result;
 		Message mesage;
+		final Actor a = this.actorService.getActorLogged();
+		Boolean uSeeingThisShit = false;
 
 		mesage = this.messageService.findOne(messageId);
+		for (final Box b : a.getBoxes())
+			if (b.getMessages().contains(mesage)) {
+				uSeeingThisShit = true;
+				break;
+			}
 
-		if (mesage == null)
+		if (mesage == null || !uSeeingThisShit)
 			result = new ModelAndView("redirect:/misc/403");
 		else {
 

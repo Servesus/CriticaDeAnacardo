@@ -96,11 +96,13 @@ public class CustomerService {
 	public Customer save(final Customer customer) {
 		Assert.notNull(customer);
 		Customer result;
-		final char[] c = customer.getPhoneNumber().toCharArray();
-		if (c[0] != '+') {
-			final Integer i = this.configurationService.findAll().get(0).getPhoneCCode();
-			final String s = i.toString();
-			customer.setPhoneNumber("+" + s + " " + customer.getPhoneNumber());
+		if (!customer.getPhoneNumber().equals(null) && !customer.getPhoneNumber().equals("")) {
+			final char[] c = customer.getPhoneNumber().toCharArray();
+			if (c[0] != '+') {
+				final Integer i = this.configurationService.findAll().get(0).getPhoneCCode();
+				final String s = i.toString();
+				customer.setPhoneNumber("+" + s + " " + customer.getPhoneNumber());
+			}
 		}
 		if (customer.getId() == 0) {
 			final Md5PasswordEncoder encoder = new Md5PasswordEncoder();
