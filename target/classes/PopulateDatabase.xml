@@ -208,6 +208,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxCustomer1"/>
+				<ref bean="outBoxCustomer1"/>
+				<ref bean="spamBoxCustomer1"/>
+				<ref bean="trashBoxCustomer1"/>
 				<ref bean="box1"/>
 			</list>
 		</property>
@@ -229,7 +233,11 @@
 		</property>
 		<property name="boxes">
 			<list>
-			<ref bean="box2"/>
+				<ref bean="inBoxCustomer2"/>
+				<ref bean="outBoxCustomer2"/>
+				<ref bean="spamBoxCustomer2"/>
+				<ref bean="trashBoxCustomer2"/>
+				<ref bean="box2"/>
 			</list>
 		</property>
 	</bean>
@@ -251,6 +259,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxCustomer3"/>
+				<ref bean="outBoxCustomer3"/>
+				<ref bean="spamBoxCustomer3"/>
+				<ref bean="trashBoxCustomer3"/>
 			</list>
 		</property>
 	</bean>
@@ -272,6 +284,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxCustomer4"/>
+				<ref bean="outBoxCustomer4"/>
+				<ref bean="spamBoxCustomer4"/>
+				<ref bean="trashBoxCustomer4"/>
 			</list>
 		</property>
 	</bean>
@@ -295,6 +311,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxCustomer5"/>
+				<ref bean="outBoxCustomer5"/>
+				<ref bean="spamBoxCustomer5"/>
+				<ref bean="trashBoxCustomer5"/>
 			</list>
 		</property>
 	</bean>
@@ -489,6 +509,10 @@
 		</property>
 		<property name="boxes">
 		<list>
+			<ref bean="inBoxHW1"/>
+			<ref bean="outBoxHW1"/>
+			<ref bean="spamBoxHW1"/>
+			<ref bean="trashBoxHW1"/>
 			<ref bean="box3"/>
 		</list>
 		</property>
@@ -518,7 +542,11 @@
 		</property>
 		<property name="boxes">
 		<list>
-		<ref bean="box4"/>
+			<ref bean="inBoxHW2"/>
+			<ref bean="outBoxHW2"/>
+			<ref bean="spamBoxHW2"/>
+			<ref bean="trashBoxHW2"/>
+			<ref bean="box4"/>
 		</list>
 		</property>
 		<property name="applications">
@@ -547,6 +575,10 @@
 		</property>
 		<property name="boxes">
 		<list>
+			<ref bean="inBoxHW3"/>
+			<ref bean="outBoxHW3"/>
+			<ref bean="spamBoxHW3"/>
+			<ref bean="trashBoxHW3"/>
 			<ref bean="box5"/>
 		</list>
 		</property>
@@ -577,6 +609,10 @@
 		</property>
 		<property name="boxes">
 		<list>
+			<ref bean="inBoxHW4"/>
+			<ref bean="outBoxHW4"/>
+			<ref bean="spamBoxHW4"/>
+			<ref bean="trashBoxHW4"/>
 			<ref bean="box6"/>
 		</list>
 		</property>
@@ -607,6 +643,10 @@
 		</property>
 		<property name="boxes">
 		<list>
+			<ref bean="inBoxHW5"/>
+			<ref bean="outBoxHW5"/>
+			<ref bean="spamBoxHW5"/>
+			<ref bean="trashBoxHW5"/>
 		</list>
 		</property>
 		<property name="applications">
@@ -826,6 +866,7 @@
 		<property name="isSystem" value="true"/>
 		<property name="messages">
 			<list>
+			<ref bean="message1"/>
 			</list>
 		</property>
 	</bean>
@@ -840,6 +881,538 @@
 	</bean>
 	
 	<bean id="trashBox" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes customer 1 -->
+		<bean id="inBoxCustomer1" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxCustomer1" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxCustomer1" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxCustomer1" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes customer 2 -->
+		<bean id="inBoxCustomer2" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxCustomer2" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxCustomer2" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxCustomer2" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes customer 3 -->
+		<bean id="inBoxCustomer3" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxCustomer3" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxCustomer3" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxCustomer3" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes customer 4 -->
+		<bean id="inBoxCustomer4" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxCustomer4" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxCustomer4" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxCustomer4" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes customer 5 -->
+		<bean id="inBoxCustomer5" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxCustomer5" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxCustomer5" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxCustomer5" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes HW1 -->
+	<bean id="inBoxHW1" class="domain.Box">
+	<property name="name" value="INBOX"/>
+	<property name="isSystem" value="true"/>
+	<property name="messages">
+		<list>
+			<ref bean="message1"/>
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="outBoxHW1" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			<ref bean="message2"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxHW1" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxHW1" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	<!--Boxes HW2 -->
+	<bean id="inBoxHW2" class="domain.Box">
+	<property name="name" value="INBOX"/>
+	<property name="isSystem" value="true"/>
+	<property name="messages">
+		<list>
+			
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="outBoxHW2" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxHW2" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxHW2" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes HW3 -->
+		<bean id="inBoxHW3" class="domain.Box">
+	<property name="name" value="INBOX"/>
+	<property name="isSystem" value="true"/>
+	<property name="messages">
+		<list>
+			
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="outBoxHW3" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxHW3" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxHW3" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes HW4 -->
+		<bean id="inBoxHW4" class="domain.Box">
+	<property name="name" value="INBOX"/>
+	<property name="isSystem" value="true"/>
+	<property name="messages">
+		<list>
+			
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="outBoxHW4" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxHW4" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxHW4" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes HW5 -->
+		<bean id="inBoxHW5" class="domain.Box">
+	<property name="name" value="INBOX"/>
+	<property name="isSystem" value="true"/>
+	<property name="messages">
+		<list>
+			
+		</list>
+	</property>
+	</bean>
+	
+	<bean id="outBoxHW5" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxHW5" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxHW5" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!--Boxes referee 1 -->
+		<bean id="inBoxReferee1" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxReferee1" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxReferee1" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxReferee1" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+		<!--Boxes referee 2 -->
+		<bean id="inBoxReferee2" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxReferee2" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxReferee2" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxReferee2" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+		<!--Boxes referee 3 -->
+		<bean id="inBoxReferee3" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxReferee3" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxReferee3" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxReferee3" class="domain.Box">
+		<property name="name" value="TRASHBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+		<!--Boxes referee 4 -->
+		<bean id="inBoxReferee4" class="domain.Box">
+		<property name="name" value="INBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="outBoxReferee4" class="domain.Box">
+		<property name="name" value="OUTBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="spamBoxReferee4" class="domain.Box">
+		<property name="name" value="SPAMBOX"/>
+		<property name="isSystem" value="true"/>
+		<property name="messages">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="trashBoxReferee4" class="domain.Box">
 		<property name="name" value="TRASHBOX"/>
 		<property name="isSystem" value="true"/>
 		<property name="messages">
@@ -1431,6 +2004,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxReferee1"/>
+				<ref bean="outBoxReferee1"/>
+				<ref bean="spamBoxReferee1"/>
+				<ref bean="trashBoxReferee1"/>
 				<ref bean="box8"/>
 			</list>
 		</property>
@@ -1457,6 +2034,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxReferee2"/>
+				<ref bean="outBoxReferee2"/>
+				<ref bean="spamBoxReferee2"/>
+				<ref bean="trashBoxReferee2"/>
 			</list>
 		</property>
 	</bean>
@@ -1483,6 +2064,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxReferee3"/>
+				<ref bean="outBoxReferee3"/>
+				<ref bean="spamBoxReferee3"/>
+				<ref bean="trashBoxReferee3"/>
 			</list>
 		</property>
 	</bean>
@@ -1510,6 +2095,10 @@
 		</property>
 		<property name="boxes">
 			<list>
+				<ref bean="inBoxReferee4"/>
+				<ref bean="outBoxReferee4"/>
+				<ref bean="spamBoxReferee4"/>
+				<ref bean="trashBoxReferee4"/>
 			</list>
 		</property>
 	</bean>
