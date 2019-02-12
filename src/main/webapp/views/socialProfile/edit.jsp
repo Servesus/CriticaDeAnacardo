@@ -44,7 +44,7 @@
 	
 	<input type="submit" name="save"
 		value="<spring:message code="socialProfile.save" />" />&nbsp; 
-	<jstl:if test="${profile.id != 0}">
+	<jstl:if test="${socialProfile.id != 0}">
 		<input type="submit" name="delete"
 			value="<spring:message code="socialProfile.delete" />" />
 	</jstl:if>
